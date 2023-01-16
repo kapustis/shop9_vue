@@ -1,7 +1,7 @@
 jQuery(function ($) {
     'use strict';
 
-    $(document).ready(function () {
+    $(document).on('change', function () {
         /****======  Sticky Header ======*******/
         let scrollPosition = window.scrollY;
         if (scrollPosition >= 400) {
@@ -37,6 +37,7 @@ jQuery(function ($) {
         $(".search-box.menu").on("click", function () {
             $(".search-box-popup").addClass("active");
         });
+
         $(".search-box-close").on("click", function () {
             $(".search-box-popup").removeClass("active");
         });

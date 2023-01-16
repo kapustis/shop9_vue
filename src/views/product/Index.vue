@@ -1,13 +1,15 @@
 <template>
   <div>
-    Some component
+    items
   </div>
 </template>
 
 <script>
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: "Some"
+  // name: "Index",
+  mounted() {
+    $(document).trigger('change')
+  }
 }
 </script>
 
