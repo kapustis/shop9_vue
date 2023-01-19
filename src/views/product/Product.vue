@@ -2,15 +2,15 @@
   <div class="product-grid-two list mt-30 ">
     <div class="product-grid-two__img">
       <a href="shop-details-2.html" class="d-block">
-        <img :src="image_url" class="first-img" alt=""/>
-        <img src="src/assets/images/home-three/products-hover-1.png" alt="" class="hover-img"/>
+        <img :src="image_url" class="first-img" :alt="title"/>
+        <img src="src/assets/images/home-three/products-hover-1.png" :alt="title" class="hover-img"/>
       </a>
       <div class="products-grid-one__badge-box">
         <span class="badge discount">Best</span>
       </div>
     </div>
-   <!--
-    <div id="popupb" class="product-gird__quick-view-popup mfp-hide">
+    <!--popup-->
+    <div :id="`popup${id}`" class="product-gird__quick-view-popup mfp-hide">
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-6">
@@ -52,7 +52,7 @@
                     </div>
                   </div>
                   <button class="prev">
-                    <i lass="flaticon-back"></i>
+                    <i class="flaticon-back"></i>
                   </button>
                   <button class="next">
                     <i class="flaticon-next"></i>
@@ -137,14 +137,14 @@
         </div>
       </div>
     </div>
-    -->
+    <!--popup-->
     <div class="product-grid-two-content text-center">
-      <span>Modern</span>
+      <span>{{category.title}}</span>
       <h5>
         <a href="shop-details-2.html"> {{ title }} </a>
       </h5>
       <p>
-        <del>$200</del>
+        <del v-if="old_price">${{old_price}}</del>
         $ {{ price }}
       </p>
       <p class="text"> {{ description }} </p>
@@ -155,7 +155,7 @@
         <div class="icon">
           <ul>
             <li>
-              <a href="#popupb" class="popup_link">
+              <a :href="`#popup${id}`" class="popup_link">
                 <i class="flaticon-eye"></i>
               </a>
             </li>
@@ -174,6 +174,9 @@
 <script>
 export default {
   name: "Product",
+  mounted() {
+    $(document).trigger('change')
+  },
   props: ['data'],
   data() {
     return {
@@ -181,6 +184,7 @@ export default {
       title: this.data.title,
       category: this.data.category,
       price: this.data.price,
+      old_price: this.data.old_price,
       description: this.data.description,
       image_url: this.data.image_url,
     }

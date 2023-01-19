@@ -1700,11 +1700,14 @@
                                 <button class="btn--primary "> Add to Cart</button>
                               </div>
                             </div>
-                            <div class="payment-method"><a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
-                                alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
-                                alt=""> </a> <a href="#0"> <img
+                            <div class="payment-method">
+                              <a href="#0">
+                              <img src="src/assets/images/payment_method/method_1.png"
+                                alt="">
+                              </a>
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_2.png" alt="">
+                              </a> <a href="#0"> <img
                                 src="src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
                                 src="src/assets/images/payment_method/method_4.png"
@@ -1715,7 +1718,9 @@
                     </div>
                   </div>
                   <div class="products-three-single-content text-center"><span>Men Shoes</span>
-                    <h5><a href="shop-details-3.html">Apex Sneakers </a></h5>
+                    <h5>
+                      <a href="shop-details-3.html">Apex Sneakers </a>
+                    </h5>
                     <p>$159.00</p>
                   </div>
                 </li>
@@ -1724,20 +1729,33 @@
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img">
                     <a href="shop-details-3.html" class="d-block">
-                      <img src="src/assets/images/home-three/productss3-3.jpg" alt=""/> </a>
-                    <div class="products-grid-one__badge-box"> <span
-                        class="bg_base badge new ">New</span></div>
-                    <a href="cart.html"
-                       class="addcart btn--primary style2"> Add To Cart </a>
+                      <img src="src/assets/images/home-three/productss3-3.jpg" alt=""/>
+                    </a>
+                    <div class="products-grid-one__badge-box">
+                      <span class="bg_base badge new ">New</span>
+                    </div>
+                    <a href="cart.html" class="addcart btn--primary style2">
+                      Add To Cart
+                    </a>
                     <div class="products-grid__usefull-links">
                       <ul>
-                        <li><a href="#0"> <i class="flaticon-heart"> </i> <span> wishlist</span>
-                        </a></li>
-                        <li><a href="#0"> <i class="flaticon-left-and-right-arrows"></i> <span>
-                                                            compare</span> </a></li>
-                        <li><a href="#popup2" class="popup_link"> <i
-                            class="flaticon-visibility"></i> <span> quick view</span>
-                        </a></li>
+                        <li>
+                          <a href="#0">
+                            <i class="flaticon-heart"> </i>
+                            <span> wishlist</span>
+                        </a>
+                        </li>
+                        <li><a href="#0">
+                          <i class="flaticon-left-and-right-arrows"></i>
+                          <span> compare</span>
+                        </a>
+                        </li>
+                        <li>
+                          <a href="#popup2" class="popup_link">
+                            <i class="flaticon-visibility"></i>
+                            <span> quick view</span>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -1749,40 +1767,44 @@
                             <div class="tabs">
                               <div class="popup-product-thumb-box">
                                 <ul>
-                                  <li class="tab-nav popup-product-thumb"><a
-                                      href="#tab111"> <img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
-                                      alt=""/> </a></li>
-                                  <li class="tab-nav popup-product-thumb "><a
-                                      href="#tab222"> <img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
-                                      alt=""/> </a></li>
-                                  <li class="tab-nav popup-product-thumb "><a
-                                      href="#tab333"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
-                                      alt=""/> </a></li>
+                                  <li class="tab-nav popup-product-thumb">
+                                    <a href="#tab111">
+                                      <img src="src/assets/images/shop/products-v6-img3.jpg" alt=""/>
+                                    </a>
+                                  </li>
+                                  <li class="tab-nav popup-product-thumb ">
+                                    <a href="#tab222">
+                                      <img src="src/assets/images/shop/products-v6-img4.jpg" alt=""/>
+                                    </a>
+                                  </li>
+                                  <li class="tab-nav popup-product-thumb ">
+                                    <a href="#tab333">
+                                      <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                                    </a>
+                                  </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tab111" class="tab-item popup-product-image">
-                                  <div class="popup-product-single-image"><img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
-                                      alt=""/></div>
+                                  <div class="popup-product-single-image">
+                                    <img src="src/assets/images/shop/products-v6-img3.jpg" alt=""/>
+                                  </div>
                                 </div>
                                 <div id="tab222" class="tab-item popup-product-image">
-                                  <div class="popup-product-single-image"><img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
-                                      alt=""/></div>
+                                  <div class="popup-product-single-image">
+                                    <img src="src/assets/images/shop/products-v6-img4.jpg" alt=""/>
+                                  </div>
                                 </div>
                                 <div id="tab333" class="tab-item popup-product-image">
-                                  <div class="popup-product-single-image"><img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
-                                      alt=""/></div>
+                                  <div class="popup-product-single-image">
+                                    <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                                  </div>
                                 </div>
-                                <button class="prev"><i
-                                    class="flaticon-back"></i></button>
-                                <button
-                                    class="next"><i class="flaticon-next"></i>
+                                <button class="prev">
+                                  <i class="flaticon-back"></i>
+                                </button>
+                                <button class="next">
+                                  <i class="flaticon-next"></i>
                                 </button>
                               </div>
                             </div>
@@ -1791,47 +1813,72 @@
                         <div class="col-lg-6">
                           <div class="popup-right-content">
                             <h3>Brown Office Shoe</h3>
-                            <div class="ratting"><i class="flaticon-star"></i> <i
-                                class="flaticon-star"></i> <i class="flaticon-star"></i>
-                              <i class="flaticon-star"></i> <i class="flaticon-star"></i>
-                              <span>(112)</span></div>
-                            <p class="text"> Hydrating Plumping Intense Shine Lip Colour
+                            <div class="ratting">
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <span>(112)</span>
+                            </div>
+                            <p class="text">
+                              Hydrating Plumping Intense Shine Lip Colour
                             </p>
                             <div class="price">
-                              <h2> $42 USD
+                              <h2>
+                                $42 USD
                                 <del> $65 USD</del>
                               </h2>
                               <h6> In stuck</h6>
                             </div>
-                            <div class="color-varient"><a href="#0"
-                                                          class="color-name pink">
-                              <span>Pink</span> </a> <a
-                                href="#0" class="color-name red"> <span>Red</span> </a>
-                              <a href="#0" class="color-name yellow"><span>Yellow</span>
-                              </a> <a href="#0" class="color-name blue"> <span>Blue</span>
-                              </a> <a href="#0" class="color-name black">
-                                <span>Black</span> </a></div>
+                            <div class="color-varient">
+                              <a href="#0" lass="color-name pink">
+                                <span>Pink</span>
+                              </a>
+                              <a href="#0" class="color-name red">
+                                <span>Red</span>
+                              </a>
+                              <a href="#0" class="color-name yellow">
+                                <span>Yellow</span>
+                              </a>
+                              <a href="#0" class="color-name blue">
+                                <span>Blue</span>
+                              </a>
+                              <a href="#0" class="color-name black">
+                                <span>Black</span>
+                              </a>
+                            </div>
                             <div class="add-product">
                               <h6>Qty:</h6>
                               <div class="button-group">
-                                <div class="qtySelector text-center"> <span
-                                    class="decreaseQty"><i
-                                    class="flaticon-minus"></i> </span> <input
-                                    type="number" class="qtyValue" value="1"/>
-                                  <span class="increaseQty"> <i
-                                      class="flaticon-plus"></i> </span></div>
-                                <button class="btn--primary "> Add to Cart</button>
+                                <div class="qtySelector text-center">
+                                  <span class="decreaseQty">
+                                    <i class="flaticon-minus"></i>
+                                  </span>
+                                  <input type="number" class="qtyValue" value="1"/>
+                                  <span class="increaseQty">
+                                    <i class="flaticon-plus"></i>
+                                  </span>
+                                </div>
+                                <button class="btn--primary ">
+                                  Add to Cart
+                                </button>
                               </div>
                             </div>
-                            <div class="payment-method"><a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
-                                alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
-                                alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
-                                alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
-                                alt=""> </a></div>
+                            <div class="payment-method">
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_1.png" alt="">
+                              </a>
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_2.png" alt="">
+                              </a>
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_3.png" alt="">
+                              </a>
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_4.png" alt="">
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1850,14 +1897,22 @@
                       <img src="src/assets/images/home-three/productss3-4.jpg" alt=""/>
                     </a>
                     <a href="cart.html" class="addcart btn--primary style2">
-                      Add To Cart </a>
+                      Add To Cart
+                    </a>
                     <div class="products-grid__usefull-links">
                       <ul>
-                        <li><a href="wishlist.html"> <i class="flaticon-heart"> </i> <span>
-                                                            wishlist</span> </a></li>
-                        <li><a href="compare.html"> <i
-                            class="flaticon-left-and-right-arrows"></i> <span>
-                                                            compare</span> </a></li>
+                        <li>
+                          <a href="wishlist.html">
+                            <i class="flaticon-heart"> </i>
+                            <span> wishlist</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="compare.html">
+                            <i class="flaticon-left-and-right-arrows"></i>
+                            <span> compare</span>
+                          </a>
+                        </li>
                         <li><a href="#popup3" class="popup_link"> <i
                             class="flaticon-visibility"></i> <span> quick view</span>
                         </a></li>
@@ -1872,40 +1927,44 @@
                             <div class="tabs">
                               <div class="popup-product-thumb-box">
                                 <ul>
-                                  <li class="tab-nav popup-product-thumb"><a
-                                      href="#tab1111"> <img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
-                                      alt=""/> </a></li>
-                                  <li class="tab-nav popup-product-thumb "><a
-                                      href="#tab2222"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
-                                      alt=""/> </a></li>
-                                  <li class="tab-nav popup-product-thumb "><a
-                                      href="#tab3333"> <img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
-                                      alt=""/> </a></li>
+                                  <li class="tab-nav popup-product-thumb">
+                                    <a href="#tab1111">
+                                      <img src="src/assets/images/shop/products-v6-img4.jpg" alt=""/>
+                                    </a>
+                                  </li>
+                                  <li class="tab-nav popup-product-thumb ">
+                                    <a href="#tab2222">
+                                      <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                                    </a>
+                                  </li>
+                                  <li class="tab-nav popup-product-thumb ">
+                                    <a href="#tab3333">
+                                      <img src="src/assets/images/shop/products-v6-img6.jpg" alt=""/>
+                                    </a>
+                                  </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tab1111" class="tab-item popup-product-image">
-                                  <div class="popup-product-single-image"><img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
-                                      alt=""/></div>
+                                  <div class="popup-product-single-image">
+                                    <img src="src/assets/images/shop/products-v6-img4.jpg" alt=""/>
+                                  </div>
                                 </div>
                                 <div id="tab2222" class="tab-item popup-product-image">
-                                  <div class="popup-product-single-image"><img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
-                                      alt=""/></div>
+                                  <div class="popup-product-single-image">
+                                    <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                                  </div>
                                 </div>
                                 <div id="tab3333" class="tab-item popup-product-image">
-                                  <div class="popup-product-single-image"><img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
-                                      alt=""/></div>
+                                  <div class="popup-product-single-image">
+                                    <img src="src/assets/images/shop/products-v6-img6.jpg" alt=""/>
+                                  </div>
                                 </div>
-                                <button class="prev"><i
-                                    class="flaticon-back"></i></button>
-                                <button
-                                    class="next"><i class="flaticon-next"></i>
+                                <button class="prev">
+                                  <i lass="flaticon-back"> </i>
+                                </button>
+                                <button class="next">
+                                  <i class="flaticon-next"></i>
                                 </button>
                               </div>
                             </div>
@@ -1914,10 +1973,14 @@
                         <div class="col-lg-6">
                           <div class="popup-right-content">
                             <h3>Brown Office Shoe</h3>
-                            <div class="ratting"><i class="flaticon-star"></i> <i
-                                class="flaticon-star"></i> <i class="flaticon-star"></i>
-                              <i class="flaticon-star"></i> <i class="flaticon-star"></i>
-                              <span>(112)</span></div>
+                            <div class="ratting">
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <i class="flaticon-star"></i>
+                              <span>(112)</span>
+                            </div>
                             <p class="text"> Hydrating Plumping Intense Shine Lip Colour
                             </p>
                             <div class="price">
@@ -1926,35 +1989,54 @@
                               </h2>
                               <h6> In stuck</h6>
                             </div>
-                            <div class="color-varient"><a href="#0"
-                                                          class="color-name pink">
-                              <span>Pink</span> </a> <a
-                                href="#0" class="color-name red"> <span>Red</span> </a>
-                              <a href="#0" class="color-name yellow"><span>Yellow</span>
-                              </a> <a href="#0" class="color-name blue"> <span>Blue</span>
-                              </a> <a href="#0" class="color-name black">
-                                <span>Black</span> </a></div>
+                            <div class="color-varient">
+                              <a href="#0" class="color-name pink">
+                                <span>Pink</span>
+                              </a>
+                              <a href="#0" class="color-name red">
+                                <span>Red</span>
+                              </a>
+                              <a href="#0" class="color-name yellow">
+                                <span>Yellow</span>
+                              </a>
+                              <a href="#0" class="color-name blue">
+                                <span>Blue</span>
+                              </a>
+                              <a href="#0" class="color-name black">
+                                <span>Black</span>
+                              </a>
+                            </div>
                             <div class="add-product">
                               <h6>Qty:</h6>
                               <div class="button-group">
-                                <div class="qtySelector text-center"> <span
-                                    class="decreaseQty"><i
-                                    class="flaticon-minus"></i> </span> <input
-                                    type="number" class="qtyValue" value="1"/>
-                                  <span class="increaseQty"> <i
-                                      class="flaticon-plus"></i> </span></div>
-                                <button class="btn--primary "> Add to Cart</button>
+                                <div class="qtySelector text-center">
+                                  <span class="decreaseQty">
+                                    <i class="flaticon-minus"></i>
+                                  </span>
+                                  <input type="number" class="qtyValue" value="1"/>
+                                  <span class="increaseQty">
+                                    <i class="flaticon-plus"></i>
+                                  </span>
+                                </div>
+                                <button class="btn--primary ">
+                                  Add to Cart
+                                </button>
                               </div>
                             </div>
-                            <div class="payment-method"><a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
-                                alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
-                                alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
-                                alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
-                                alt=""> </a></div>
+                            <div class="payment-method">
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_1.png" alt="">
+                              </a>
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_2.png" alt="">
+                              </a>
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_3.png" alt="">
+                              </a>
+                              <a href="#0">
+                                <img src="src/assets/images/payment_method/method_4.png" alt="">
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1975,19 +2057,27 @@
                         <span class="bg_black badge discount">-10%</span>
                       </div>
                     </a>
-                    <a
-                        href="cart.html" class="addcart btn--primary style2"> Add To Cart </a>
+                    <a href="cart.html" class="addcart btn--primary style2"> Add To Cart </a>
                     <div class="products-grid__usefull-links">
                       <ul>
-                        <li><a href="wishlist.html"> <i class="flaticon-heart"> </i> <span>
-                                                                wishlist</span> </a></li>
-                        <li><a href="compare.html"> <i
-                            class="flaticon-left-and-right-arrows"></i> <span>
-                                                                compare</span> </a></li>
-                        <li><a href="#popup4" class="popup_link"> <i
-                            class="flaticon-visibility"></i> <span> quick
-                                                                view</span>
-                        </a></li>
+                        <li>
+                          <a href="wishlist.html">
+                            <i class="flaticon-heart"> </i>
+                            <span>  wishlist</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="compare.html">
+                            <i class="flaticon-left-and-right-arrows"></i>
+                            <span> compare</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#popup4" class="popup_link">
+                            <i class="flaticon-visibility"></i>
+                            <span> quick view</span>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                     <div id="popup4" class="product-gird__quick-view-popup mfp-hide">
@@ -1998,43 +2088,44 @@
                               <div class="tabs">
                                 <div class="popup-product-thumb-box">
                                   <ul>
-                                    <li class="tab-nav popup-product-thumb"><a
-                                        href="#tab11111"> <img
-                                        src="src/assets/images/shop/products-v6-img5.jpg"
-                                        alt=""/> </a></li>
-                                    <li class="tab-nav popup-product-thumb "><a
-                                        href="#tab22222"> <img
-                                        src="src/assets/images/shop/products-v6-img6.jpg"
-                                        alt=""/> </a></li>
-                                    <li class="tab-nav popup-product-thumb "><a
-                                        href="#tab33333"> <img
-                                        src="src/assets/images/shop/products-v6-img7.jpg"
-                                        alt=""/> </a></li>
+                                    <li class="tab-nav popup-product-thumb">
+                                      <a href="#tab11111">
+                                        <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                                      </a>
+                                    </li>
+                                    <li class="tab-nav popup-product-thumb ">
+                                      <a href="#tab22222">
+                                        <img src="src/assets/images/shop/products-v6-img6.jpg" alt=""/>
+                                      </a>
+                                    </li>
+                                    <li class="tab-nav popup-product-thumb ">
+                                      <a href="#tab33333">
+                                        <img src="src/assets/images/shop/products-v6-img7.jpg" alt=""/>
+                                      </a>
+                                    </li>
                                   </ul>
                                 </div>
                                 <div class="popup-product-main-image-box">
-                                  <div id="tab11111"
-                                       class="tab-item popup-product-image">
+                                  <div id="tab11111" class="tab-item popup-product-image">
                                     <div class="popup-product-single-image">
-                                      <img src="src/assets/images/shop/products-v6-img5.jpg"
-                                           alt=""/></div>
+                                      <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                                    </div>
                                   </div>
-                                  <div id="tab22222"
-                                       class="tab-item popup-product-image">
+                                  <div id="tab22222" class="tab-item popup-product-image">
                                     <div class="popup-product-single-image">
-                                      <img src="src/assets/images/shop/products-v6-img6.jpg"
-                                           alt=""/></div>
+                                      <img src="src/assets/images/shop/products-v6-img6.jpg" alt=""/>
+                                    </div>
                                   </div>
-                                  <div id="tab33333"
-                                       class="tab-item popup-product-image">
+                                  <div id="tab33333" class="tab-item popup-product-image">
                                     <div class="popup-product-single-image">
-                                      <img src="src/assets/images/shop/products-v6-img7.jpg"
-                                           alt=""/></div>
+                                      <img src="src/assets/images/shop/products-v6-img7.jpg" alt=""/>
+                                    </div>
                                   </div>
-                                  <button class="prev"><i
-                                      class="flaticon-back"></i></button>
-                                  <button class="next"><i
-                                      class="flaticon-next"></i>
+                                  <button class="prev">
+                                    <i class="flaticon-back"></i>
+                                  </button>
+                                  <button class="next">
+                                    <i class="flaticon-next"></i>
                                   </button>
                                 </div>
                               </div>
@@ -2043,14 +2134,16 @@
                           <div class="col-lg-6">
                             <div class="popup-right-content">
                               <h3>Brown Office Shoe</h3>
-                              <div class="ratting"><i class="flaticon-star"></i> <i
-                                  class="flaticon-star"></i> <i
-                                  class="flaticon-star"></i> <i
-                                  class="flaticon-star"></i> <i
-                                  class="flaticon-star"></i> <span>(112)</span>
+                              <div class="ratting">
+                                <i class="flaticon-star"></i>
+                                <i class="flaticon-star"></i>
+                                <i class="flaticon-star"></i>
+                                <i class="flaticon-star"></i>
+                                <i class="flaticon-star"></i>
+                                <span>(112)</span>
                               </div>
-                              <p class="text"> Hydrating Plumping Intense Shine Lip
-                                Colour
+                              <p class="text">
+                                Hydrating Plumping Intense Shine Lip Colour
                               </p>
                               <div class="price">
                                 <h2> $42 USD
@@ -2058,50 +2151,65 @@
                                 </h2>
                                 <h6> In stuck</h6>
                               </div>
-                              <div class="color-varient"><a href="#0"
-                                                            class="color-name pink">
-                                <span>Pink</span> </a>
+                              <div class="color-varient">
+                                <a href="#0" class="color-name pink">
+                                  <span>Pink</span>
+                                </a>
                                 <a href="#0" class="color-name red">
                                   <span>Red</span>
-                                </a> <a href="#0"
-                                        class="color-name yellow"><span>Yellow</span>
+                                </a>
+                                <a href="#0" class="color-name yellow">
+                                  <span>Yellow</span>
                                 </a>
                                 <a href="#0" class="color-name blue">
                                   <span>Blue</span>
-                                </a> <a href="#0" class="color-name black">
-                                  <span>Black</span> </a></div>
+                                </a>
+                                <a href="#0" class="color-name black">
+                                  <span>Black</span>
+                                </a>
+                              </div>
                               <div class="add-product">
                                 <h6>Qty:</h6>
                                 <div class="button-group">
-                                  <div class="qtySelector text-center"> <span
-                                      class="decreaseQty"><i
-                                      class="flaticon-minus"></i> </span>
-                                    <input type="number" class="qtyValue"
-                                           value="1"/> <span class="increaseQty">
-                                                                                <i class="flaticon-plus"></i> </span>
+                                  <div class="qtySelector text-center">
+                                    <span class="decreaseQty">
+                                      <i class="flaticon-minus"></i>
+                                    </span>
+                                    <input type="number" class="qtyValue" value="1"/>
+                                    <span class="increaseQty">
+                                      <i class="flaticon-plus"></i>
+                                    </span>
                                   </div>
                                   <button class="btn--primary "> Add to
                                     Cart
                                   </button>
                                 </div>
                               </div>
-                              <div class="payment-method"><a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_1.png"
-                                  alt=""> </a> <a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_2.png"
-                                  alt=""> </a> <a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_3.png"
-                                  alt=""> </a> <a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_4.png"
-                                  alt=""> </a></div>
+                              <div class="payment-method">
+                                <a href="#0">
+                                  <img src="src/assets/images/payment_method/method_1.png" alt="">
+                                </a>
+                                <a href="#0">
+                                  <img src="src/assets/images/payment_method/method_2.png" alt="">
+                                </a>
+                                <a href="#0">
+                                  <img src="src/assets/images/payment_method/method_3.png" alt="">
+                                </a>
+                                <a href="#0">
+                                  <img src="src/assets/images/payment_method/method_4.png" alt="">
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="products-three-single-content text-center"><span>Men Shoes</span>
-                    <h5><a href="shop-details-3.html">High Quality Sneakers</a></h5>
+                  <div class="products-three-single-content text-center">
+                    <span>Men Shoes</span>
+                    <h5>
+                      <a href="shop-details-3.html">High Quality Sneakers</a>
+                    </h5>
                     <p>$159.00</p>
                   </div>
                 </li>
@@ -2126,44 +2234,46 @@
           <div class="col-xl-12">
             <div class="product-slider-main position-relative ">
               <div class="product-slider__single text-center">
-                <div
-                    class="inner text-center d-flex flex-column justify-content-center align-items-center">
+                <div class="inner text-center d-flex flex-column justify-content-center align-items-center">
                   <div class="img-box">
                     <img src="src/assets/images/home-three/fimg.png" alt=""/>
                   </div>
-                  <div class="content-box mt-4"><span>On Sale</span>
+                  <div class="content-box mt-4">
+                    <span>On Sale</span>
                     <h2>$1499.00</h2>
                     <h5>Enjoy 15% off your first order</h5>
-                    <div class="btn-box"><a href="shop-details-3.html"
-                                            class="btn--primary style2">Select Option</a></div>
+                    <div class="btn-box">
+                      <a href="shop-details-3.html" class="btn--primary style2">Select Option</a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="product-slider__single text-center">
-                <div
-                    class="inner text-center d-flex flex-column justify-content-center align-items-center">
+                <div class="inner text-center d-flex flex-column justify-content-center align-items-center">
                   <div class="img-box">
                     <img src="src/assets/images/home-three/fimg.png" alt=""/>
                   </div>
                   <div class="content-box mt-4"><span>On Sale</span>
                     <h2>$1499.00</h2>
                     <h5>Enjoy 15% off your first order</h5>
-                    <div class="btn-box"><a href="shop-details-3.html"
-                                            class="btn--primary style2">Select Option</a></div>
+                    <div class="btn-box">
+                      <a href="shop-details-3.html" class="btn--primary style2">Select Option</a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="product-slider__single text-center">
-                <div
-                    class="inner text-center d-flex flex-column justify-content-center align-items-center">
+                <div class="inner text-center d-flex flex-column justify-content-center align-items-center">
                   <div class="img-box">
                     <img src="src/assets/images/home-three/fimg.png" alt=""/>
                   </div>
-                  <div class="content-box mt-4"><span>On Sale</span>
+                  <div class="content-box mt-4">
+                    <span>On Sale</span>
                     <h2>$1499.00</h2>
                     <h5>Enjoy 15% off your first order</h5>
-                    <div class="btn-box"><a href="shop-details-3.html"
-                                            class="btn--primary style2">Select Option</a></div>
+                    <div class="btn-box">
+                      <a href="shop-details-3.html" class="btn--primary style2">Select Option</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2182,14 +2292,18 @@
             <!--Start Products Seven Single-->
             <div class="col-md-6 wow fadeInUp animated">
               <div class="products-cetagory-three__single">
-                <div class="products-cetagory-three__single-img height-400"
-                     style="background-image: url(src/assets/images/shop/products-v7-img1.jpg);"></div>
+                <div
+                    class="products-cetagory-three__single-img height-400"
+                    style="background-image: url(src/assets/images/shop/products-v7-img1.jpg);">
+                </div>
                 <div class="products-cetagory-three__single-content "><span>Puma Hot Deal</span>
                   <h2>2022 Shoes</h2>
                   <div class="text">
                     <p>Enable interoperable channels via turnkey <br> market models...</p>
                   </div>
-                  <div class="btn-box"><a href="shop-grid-left-sidebar.html">Explore Items</a></div>
+                  <div class="btn-box">
+                    <a href="shop-grid-left-sidebar.html">Explore Items</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2200,7 +2314,9 @@
                 <div class="inner h-100">
                   <h3>Take A Chance</h3>
                   <h2>80 <span>% <br> OFF</span></h2>
-                  <div class="btn-box"><a href="cart.html" class="button">Code: LOVEBITE</a></div>
+                  <div class="btn-box">
+                    <a href="cart.html" class="button">Code: LOVEBITE</a>
+                  </div>
                   <p>Don't Miss Out: Coupon expires soon.</p>
                 </div>
               </div>
@@ -2209,14 +2325,17 @@
             <!--Start Products Seven Single-->
             <div class="col-xxl-3 col-md-6 wow fadeInUp animated">
               <div class="products-cetagory-three__single style3">
-                <div class="products-cetagory-three__single-img  height-400  "
-                     style="background-image: url(src/assets/images/shop/products-v7-img2.jpg);"></div>
+                <div
+                    class="products-cetagory-three__single-img  height-400  "
+                    style="background-image: url(src/assets/images/shop/products-v7-img2.jpg);">
+                </div>
                 <div class="products-cetagory-three__single-content "><span>Puma Hot Deal</span>
                   <h2>2022 Shoes</h2>
                   <div class="text">
                     <p>Enable interoperable channels via <br> turnkey market models...</p>
                   </div>
-                  <div class="btn-box"><a href="shop-list-right-sidebar.html">Explore Items</a>
+                  <div class="btn-box">
+                    <a href="shop-list-right-sidebar.html">Explore Items</a>
                   </div>
                 </div>
               </div>
@@ -2236,14 +2355,20 @@
             <div
                 class="newsLetter-one__content-box d-flex align-items-center justify-content-md-start justify-content-center wow fadeInUp animated"
                 data-wow-delay="0.1s">
-              <div class="thumb"><img src="src/assets/images/home-two/envalop.png" alt=""></div>
-              <h3 class="t36"><span>Sign Up For </span> Newsletter </h3>
+              <div class="thumb">
+                <img src="src/assets/images/home-two/envalop.png" alt="">
+              </div>
+              <h3 class="t36">
+                <span>Sign Up For </span>
+                Newsletter
+              </h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div
                 class="newsLetter-one__content-box d-flex align-items-center justify-content-md-start justify-content-center wow fadeInUp animated "
-                data-wow-delay="0.2s">
+                data-wow-delay="0.2s"
+            >
               <h6 class="text-md-start text-center"> Subscribe to ours weekly newsletter for all the
                 latest updates </h6>
             </div>
@@ -2251,12 +2376,13 @@
           <div class="col-lg-4 col-md-6">
             <div
                 class="newsLetter-one__content-box three d-flex align-items-center justify-content-md-start justify-content-center wow fadeInUp animated"
-                data-wow-delay="0.3s">
+                data-wow-delay="0.3s"
+            >
               <form action="#0" class="form">
-                <div class="newsLetter-one__subscribe-box"><input type="email"
-                                                                  placeholder="Email address" name="email">
-                  <button type="submit"
-                          class="subscrib-btn"> Subscribe
+                <div class="newsLetter-one__subscribe-box">
+                  <input type="email" placeholder="Email address" name="email">
+                  <button type="submit" class="subscrib-btn">
+                    Subscribe
                   </button>
                 </div>
               </form>
@@ -2278,10 +2404,13 @@
                   <div class="sec-title-style2 style3">
                     <h2>Shop by Categories</h2>
                   </div>
-                  <p>Continually enhance long-term don high impact niche markets whereas user centric
-                    niche markets. actualize backward compatible...</p>
-                  <div class="btn-box"><a href="shop-grid-left-sidebar.html"
-                                          class="btn--primary style2">Discover More</a></div>
+                  <p>
+                    Continually enhance long-term don high impact niche markets whereas user centric
+                    niche markets. actualize backward compatible...
+                  </p>
+                  <div class="btn-box">
+                    <a href="shop-grid-left-sidebar.html" class="btn--primary style2">Discover More</a>
+                  </div>
                 </div>
               </div>
 
@@ -2289,11 +2418,13 @@
                 <div class="row  justify-content-center">
                   <div class="col-lg-4 col-sm-6">
                     <div class="categories-three__list-item mt-30 wow fadeInUp animated">
-                      <div class="categories-three__list-item-inner"><a
-                          href="shop-grid-right-sidebar.html" class="img-box"> <img
-                          src="src/assets/images/home-three/categories-v2-img1.jpg" alt=""/>
-                        <div class="text"><span>369 Items</span></div>
-                      </a>
+                      <div class="categories-three__list-item-inner">
+                        <a href="shop-grid-right-sidebar.html" class="img-box">
+                          <img src="src/assets/images/home-three/categories-v2-img1.jpg" alt=""/>
+                          <div class="text">
+                            <span>369 Items</span>
+                          </div>
+                        </a>
                         <div class="title text-center">
                           <h4><a href="shop-grid-left-sidebar.html">Sport’s Shoes</a></h4>
                         </div>
@@ -2302,11 +2433,13 @@
                   </div>
                   <div class="col-lg-4 col-sm-6">
                     <div class="categories-three__list-item mt-30 wow fadeInUp animated">
-                      <div class="categories-three__list-item-inner"><a
-                          href="shop-grid-left-sidebar.html" class="img-box"> <img
-                          src="src/assets/images/home-three/categories-v2-img2.jpg" alt=""/>
-                        <div class="text"><span>369 Items</span></div>
-                      </a>
+                      <div class="categories-three__list-item-inner">
+                        <a href="shop-grid-left-sidebar.html" class="img-box">
+                          <img src="src/assets/images/home-three/categories-v2-img2.jpg" alt=""/>
+                          <div class="text">
+                            <span>369 Items</span>
+                          </div>
+                        </a>
                         <div class="title text-center">
                           <h4><a href="shop-grid-left-sidebar.html">Casual Shoes</a></h4>
                         </div>
@@ -2315,11 +2448,13 @@
                   </div>
                   <div class="col-lg-4 col-sm-6">
                     <div class="categories-three__list-item mt-30 wow fadeInUp animated">
-                      <div class="categories-three__list-item-inner"><a
-                          href="shop-grid-left-sidebar.html" class="img-box"> <img
-                          src="src/assets/images/home-three/categories-v2-img3.jpg" alt=""/>
-                        <div class="text"><span>369 Items</span></div>
-                      </a>
+                      <div class="categories-three__list-item-inner">
+                        <a href="shop-grid-left-sidebar.html" class="img-box">
+                          <img src="src/assets/images/home-three/categories-v2-img3.jpg" alt=""/>
+                          <div class="text">
+                            <span>369 Items</span>
+                          </div>
+                        </a>
                         <div class="title text-center">
                           <h4><a href="shop-grid-left-sidebar.html">Office Shoes</a></h4>
                         </div>
@@ -2340,41 +2475,61 @@
       <div class="container auto-container">
         <div class="row mt--30">
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.2s">
-            <div class="core-features__box d-flex ms-0"><span class="one"></span> <span class="two"></span>
-              <div class="icon"><img src="src/assets/images/icon/f-icon-1.png" alt=""></div>
-              <div class="core-features__box-content"><a href="login.html" class="d-block">
-                <h4> Secure Payment </h4>
-              </a>
+            <div class="core-features__box d-flex ms-0">
+              <span class="one"></span>
+              <span class="two"></span>
+              <div class="icon">
+                <img src="src/assets/images/icon/f-icon-1.png" alt="">
+              </div>
+              <div class="core-features__box-content">
+                <a href="login.html" class="d-block">
+                  <h4> Secure Payment </h4>
+                </a>
                 <p>Everybody different which the why give offer styles for every body.</p>
               </div>
             </div>
           </div>
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.3s">
-            <div class="core-features__box d-flex "><span class="one"></span> <span class="two"></span>
-              <div class="icon"><img src="src/assets/images/icon/f-icon-2.png" alt=""></div>
-              <div class="core-features__box-content"><a href="login.html" class="d-block">
-                <h4> 27/7 Fast Delivery </h4>
-              </a>
+            <div class="core-features__box d-flex ">
+              <span class="one"></span>
+              <span class="two"></span>
+              <div class="icon">
+                <img src="src/assets/images/icon/f-icon-2.png" alt="">
+              </div>
+              <div class="core-features__box-content">
+                <a href="login.html" class="d-block">
+                  <h4> 27/7 Fast Delivery </h4>
+                </a>
                 <p>Everybody different which the why give offer styles for every body.</p>
               </div>
             </div>
           </div>
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.4s">
-            <div class="core-features__box d-flex "><span class="one"></span> <span class="two"></span>
-              <div class="icon"><img src="src/assets/images/icon/f-icon-3.png" alt=""></div>
-              <div class="core-features__box-content"><a href="login.html" class="d-block">
-                <h4> Return & Refund </h4>
-              </a>
+            <div class="core-features__box d-flex ">
+              <span class="one"></span>
+              <span class="two"></span>
+              <div class="icon">
+                <img src="src/assets/images/icon/f-icon-3.png" alt="">
+              </div>
+              <div class="core-features__box-content">
+                <a href="login.html" class="d-block">
+                  <h4> Return & Refund </h4>
+                </a>
                 <p>Everybody different which the why give offer styles for every body.</p>
               </div>
             </div>
           </div>
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.5s">
-            <div class="core-features__box d-flex me-0"><span class="one"></span> <span class="two"></span>
-              <div class="icon"><img src="src/assets/images/icon/f-icon-4.png" alt=""></div>
-              <div class="core-features__box-content"><a href="login.html" class="d-block">
-                <h4> Quality Support </h4>
-              </a>
+            <div class="core-features__box d-flex me-0">
+              <span class="one"></span>
+              <span class="two"></span>
+              <div class="icon">
+                <img src="src/assets/images/icon/f-icon-4.png" alt="">
+              </div>
+              <div class="core-features__box-content">
+                <a href="login.html" class="d-block">
+                  <h4> Quality Support </h4>
+                </a>
                 <p>Everybody different which the why give offer styles for every body.</p>
               </div>
             </div>
@@ -2401,60 +2556,81 @@
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"><img src="src/assets/images/testimonial/testimonial-v1-1.png"
-                                            alt=""></div>
-                    <span class="quate"> <i
-                        class="flaticon-right-quotes-symbol"></i> </span>
+                    <div class="thumb">
+                      <img src="src/assets/images/testimonial/testimonial-v1-1.png" alt="">
+                    </div>
+                    <span class="quate"> <i class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
                   <div class="review-one__review-text">
-                    <p> “Quickly explot worldwide leadership long-term high-impact "outside the box
-                      thinking. Quickly network synergistic enterprise customer service” </p>
-                    <h4><a href="#0">Ana Fleming </a></h4> <span> Web Developer</span>
+                    <p>
+                      “Quickly explot worldwide leadership long-term high-impact "outside the box
+                      thinking. Quickly network synergistic enterprise customer service”
+                    </p>
+                    <h4>
+                      <a href="#0">Ana Fleming </a>
+                    </h4>
+                    <span> Web Developer</span>
                   </div>
                 </div>
               </div>
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"><img src="src/assets/images/testimonial/testimonial-v1-2.png"
-                                            alt=""></div>
-                    <span class="quate"> <i
-                        class="flaticon-right-quotes-symbol"></i> </span>
+                    <div class="thumb">
+                      <img src="src/assets/images/testimonial/testimonial-v1-2.png" alt="">
+                    </div>
+                    <span class="quate"> <i class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
                   <div class="review-one__review-text">
-                    <p> “Quickly explot worldwide leadership long-term high-impact "outside the box
-                      thinking. Quickly network synergistic enterprise customer service” </p>
-                    <h4><a href="#0">Elaine Hayes</a></h4> <span>UI/UX Designer </span>
+                    <p>
+                      “Quickly explot worldwide leadership long-term high-impact "outside the box
+                      thinking. Quickly network synergistic enterprise customer service”
+                    </p>
+                    <h4>
+                      <a href="#0">Elaine Hayes</a>
+                    </h4>
+                    <span>UI/UX Designer </span>
                   </div>
                 </div>
               </div>
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"><img src="src/assets/images/testimonial/testimonial-v1-3.png"
-                                            alt=""></div>
-                    <span class="quate"> <i
-                        class="flaticon-right-quotes-symbol"></i> </span>
+                    <div class="thumb">
+                      <img src="src/assets/images/testimonial/testimonial-v1-3.png" alt="">
+                      ]
+                    </div>
+                    <span class="quate"> <i class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
                   <div class="review-one__review-text">
-                    <p> “Quickly explot worldwide leadership long-term high-impact "outside the box
-                      thinking. Quickly network synergistic enterprise customer service” </p>
-                    <h4><a href="#0">Jane Young </a></h4> <span>Web Engineer </span>
+                    <p>
+                      “Quickly explot worldwide leadership long-term high-impact "outside the box
+                      thinking. Quickly network synergistic enterprise customer service”
+                    </p>
+                    <h4>
+                      <a href="#0">Jane Young </a>
+                    </h4>
+                    <span>Web Engineer </span>
                   </div>
                 </div>
               </div>
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"><img src="src/assets/images/testimonial/testimonial-v1-2.png"
-                                            alt=""></div>
-                    <span class="quate"> <i
-                        class="flaticon-right-quotes-symbol"></i> </span>
+                    <div class="thumb">
+                      <img src="src/assets/images/testimonial/testimonial-v1-2.png" alt="">
+                    </div>
+                    <span class="quate"> <i class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
                   <div class="review-one__review-text">
-                    <p> “Quickly explot worldwide leadership long-term high-impact "outside the box
-                      thinking. Quickly network synergistic enterprise customer service” </p>
-                    <h4><a href="#0">Kim Douglas </a></h4> <span>React Developer</span>
+                    <p>
+                      “Quickly explot worldwide leadership long-term high-impact "outside the box
+                      thinking. Quickly network synergistic enterprise customer service”
+                    </p>
+                    <h4>
+                      <a href="#0">Kim Douglas </a>
+                    </h4>
+                    <span>React Developer</span>
                   </div>
                 </div>
               </div>
@@ -2482,20 +2658,24 @@
               </a>
               <div class="blog-three__single-content text-center"><span>Vendora Style</span>
                 <h4><a href="blog-single.html">A Perfect Style With Our Fashion Shoes</a></h4>
-                <div class="btn-box"><a href="blog-single.html">Read More</a></div>
+                <div class="btn-box">
+                  <a href="blog-single.html">Read More</a>
+                </div>
               </div>
             </div>
           </div>
           <!--End Blog Three Single-->
           <!--Start Blog Three Single-->
           <div class="col-xl-4 col-lg-4 col-sm-6 wow fadeInUp animated">
-            <div class="blog-three__single mt-30"><a href="blog-single.html"
-                                                     class="blog-three__single-img d-block"> <img
-                src="src/assets/images/blog/blog-v3-2.jpg"
-                alt=""/> </a>
+            <div class="blog-three__single mt-30">
+              <a href="blog-single.html" class="blog-three__single-img d-block">
+                <img src="src/assets/images/blog/blog-v3-2.jpg" alt=""/>
+              </a>
               <div class="blog-three__single-content text-center"><span>Vendora Style</span>
                 <h4><a href="blog-single.html">2021-2021 fall-winter men's shoe trends.</a></h4>
-                <div class="btn-box"><a href="blog-single.html">Read More</a></div>
+                <div class="btn-box">
+                  <a href="blog-single.html">Read More</a>
+                </div>
               </div>
             </div>
           </div>
@@ -2530,29 +2710,38 @@
                 <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
               </a>
               <a href="src/assets/images/home-three/gallery-v2-img2.jpg" class="gallery-two__single">
-                <img src="src/assets/images/home-three/gallery-v2-img2.jpg" alt=""/> <span
-                  class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img3.jpg" alt=""/> <span
-                class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img4.jpg" alt=""/> <span
-                class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img5.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img5.jpg" alt=""/> <span
-                class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img6.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img6.jpg" alt=""/> <span
-                class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img2.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img2.jpg" alt=""/> <span
-                class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img3.jpg" alt=""/> <span
-                class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img4.jpg" alt=""/> <span
-                class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a></div>
+                <img src="src/assets/images/home-three/gallery-v2-img2.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+              <a href="src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single">
+                <img src="src/assets/images/home-three/gallery-v2-img3.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+              <a href="src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single">
+                <img src="src/assets/images/home-three/gallery-v2-img4.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+              <a href="src/assets/images/home-three/gallery-v2-img5.jpg" class="gallery-two__single">
+                <img src="src/assets/images/home-three/gallery-v2-img5.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+              <a href="src/assets/images/home-three/gallery-v2-img6.jpg" class="gallery-two__single">
+                <img src="src/assets/images/home-three/gallery-v2-img6.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+              <a href="src/assets/images/home-three/gallery-v2-img2.jpg" class="gallery-two__single">
+                <img src="src/assets/images/home-three/gallery-v2-img2.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+              <a href="src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single">
+                <img src="src/assets/images/home-three/gallery-v2-img3.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+              <a href="src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single">
+                <img src="src/assets/images/home-three/gallery-v2-img4.jpg" alt=""/>
+                <span class="zoom-icon"> <i class="flaticon-expand"></i> </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -296,7 +296,7 @@
                       aria-labelledby="pills-grid-tab"
                   >
                     <div class="row">
-                      <div v-for="product in products" class="col-xl-4 col-lg-6 col-6 ">
+                      <div v-for="product in products" :key="product.id" class="col-xl-4 col-lg-6 col-6 ">
                         <product-grid :data="product"></product-grid>
                       </div>
                     </div>
