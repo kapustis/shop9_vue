@@ -48,7 +48,7 @@
                   <ul>
                     <li class="tab-nav popup-product-thumb">
                       <a href="#tabb1">
-                        <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                        <img :src="image_url" alt=""/>
                       </a>
                     </li>
                     <li class="tab-nav popup-product-thumb ">
@@ -66,7 +66,7 @@
                 <div class="popup-product-main-image-box">
                   <div id="tabb1" class="tab-item popup-product-image">
                     <div class="popup-product-single-image">
-                      <img src="src/assets/images/shop/products-v6-img5.jpg" alt=""/>
+                      <img :src="image_url" :alt="title"/>
                     </div>
                   </div>
                   <div id="tabb2" class="tab-item popup-product-image">
@@ -92,7 +92,7 @@
 
           <div class="col-lg-6">
             <div class="popup-right-content">
-              <h3>Brown Office Shoe</h3>
+              <h3>{{title}}</h3>
               <div class="ratting">
                 <i class="flaticon-star"></i>
                 <i class="flaticon-star"></i>
@@ -102,11 +102,11 @@
                 <span>(112)</span>
               </div>
               <p class="text">
-                Hydrating Plumping Intense Shine Lip Colour
+                {{description}}
               </p>
               <div class="price">
-                <h2> $42 USD
-                  <del> $65 USD</del>
+                <h2> ${{price}} USD
+                  <del v-if="old_price"> ${{ old_price }} USD</del>
                 </h2>
                 <h6> In stuck</h6>
               </div>
@@ -139,8 +139,8 @@
                       <i class="flaticon-plus"></i>
                     </span>
                   </div>
-                  <button class="btn--primary "> Add to
-                    Cart
+                  <button class="btn--primary ">
+                    Add to Cart
                   </button>
                 </div>
               </div>
@@ -167,7 +167,7 @@
     <div class="products-three-single-content text-center">
       <span> {{ category.title }}</span>
       <h5>
-        <a href="shop-details-3.html">{{ title }} </a>
+        <a href="shop-details-3.html"> {{ title }} </a>
       </h5>
       <p>
         <del v-if="old_price">${{ old_price }}</del>
@@ -180,9 +180,6 @@
 <script>
 export default {
   name: "ProductGrid",
-  mounted() {
-    $(document).trigger('change')
-  },
   props: ['data'],
   data() {
     return {

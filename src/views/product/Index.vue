@@ -302,9 +302,14 @@
                     </div>
                   </div>
 
-                  <div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+                  <div
+                      class="tab-pane fade"
+                      id="pills-list"
+                      role="tabpanel"
+                      aria-labelledby="pills-list-tab"
+                  >
                     <div class="row">
-                      <div v-for="product in products" class="col-12">
+                      <div v-for="product in products" :key="product.id" class="col-12">
                         <product :data="product"></product>
                       </div>
                     </div>
@@ -353,7 +358,7 @@ export default {
   name: "Index",
   components: {ProductGrid, Product},
   mounted() {
-    $(document).trigger('change')
+    // $(document).trigger('change')
     this.getProducts()
   },
   data() {
@@ -366,6 +371,9 @@ export default {
       this.axios.get('http://localhost:8876/api/products')
           .then(res => {
             this.products = res.data.data
+          })
+          .finally( v => {
+            $(document).trigger('change')
           })
     }
   }

@@ -174,9 +174,6 @@
 <script>
 export default {
   name: "Product",
-  mounted() {
-    $(document).trigger('change')
-  },
   props: ['data'],
   data() {
     return {
