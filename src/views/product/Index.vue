@@ -371,6 +371,7 @@ export default {
       this.axios.get('http://localhost:8876/api/products')
           .then(res => {
             this.products = res.data.data
+            console.log(res.data.data)
           })
           .finally( v => {
             $(document).trigger('change')

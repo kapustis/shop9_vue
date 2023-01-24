@@ -111,21 +111,17 @@
                 <h6> In stuck</h6>
               </div>
               <div class="color-varient">
-                <a href="#0" class="color-name pink">
-                  <span>Pink</span>
-                </a>
-                <a href="#0" class="color-name red">
-                  <span>Red</span>
-                </a>
-                <a href="#0" class="color-name yellow">
-                  <span>Yellow</span>
-                </a>
-                <a href="#0" class="color-name blue">
-                  <span>Blue</span>
-                </a>
-                <a href="#0" class="color-name black">
-                  <span>Black</span>
-                </a>
+                <template v-for="group_product in group_products">
+                  <a
+                      v-for="color in group_product.colors"
+                      :href="`#${group_product.id}`"
+                      class="color-name"
+                      :style="`background:${color.title};`"
+                  >
+                    <span>{{ color.id }}</span>
+                  </a>
+                </template>
+
               </div>
               <div class="add-product">
                 <h6>Qty:</h6>
@@ -190,6 +186,7 @@ export default {
       category: this.data.category,
       description: this.data.description,
       image_url: this.data.image_url,
+      group_products: this.data.group_products,
     }
   }
 }
