@@ -310,7 +310,7 @@
                   >
                     <div class="row">
                       <div v-for="product in products" :key="product.id" class="col-12">
-                        <product :data="product"></product>
+<!--                        <product :data="product"></product>-->
                       </div>
                     </div>
                   </div>
@@ -363,7 +363,7 @@ export default {
   },
   data() {
     return {
-      products: []
+      products: [],
     }
   },
   methods: {
@@ -376,7 +376,8 @@ export default {
           .finally( v => {
             $(document).trigger('change')
           })
-    }
+    },
+
   }
 }
 </script>

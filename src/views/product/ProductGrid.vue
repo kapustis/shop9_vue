@@ -28,8 +28,8 @@
               <span>compare</span>
             </a>
           </li>
-          <li>
-            <a  :href="`#popup${id}`" class="popup_link">
+          <li @click="isPopupVisible = true">
+            <a  :href="`#popup${id}`" class="popup_link" >
               <i class="flaticon-visibility"></i>
               <span> quick view</span>
             </a>
@@ -37,6 +37,8 @@
         </ul>
       </div>
     </div>
+
+<!--    <product-popup v-if="isPopupVisible" ></product-popup>-->
 
     <div  :id="`popup${id}`" class="product-gird__quick-view-popup mfp-hide">
       <div class="container">
@@ -113,12 +115,12 @@
               <div class="color-varient">
                 <template v-for="group_product in group_products">
                   <a
-                      v-for="color in group_product.colors"
+
                       :href="`#${group_product.id}`"
                       class="color-name"
-                      :style="`background:${color.title};`"
+                      :style="`background:${group_product.color.title};`"
                   >
-                    <span>{{ color.id }}</span>
+                    <span>{{ group_product.color.id }}</span>
                   </a>
                 </template>
 
@@ -163,7 +165,7 @@
     <div class="products-three-single-content text-center">
       <span> {{ category.title }}</span>
       <h5>
-        <a href="shop-details-3.html"> {{ title }} </a>
+        <a href="shop-details-3.html" > {{ title }} </a>
       </h5>
       <p>
         <del v-if="old_price">${{ old_price }}</del>
@@ -174,8 +176,11 @@
 </template>
 
 <script>
+import ProductPopup from "@/components/productPopup.vue";
+
 export default {
   name: "ProductGrid",
+  components: {ProductPopup},
   props: ['data'],
   data() {
     return {
@@ -187,6 +192,20 @@ export default {
       description: this.data.description,
       image_url: this.data.image_url,
       group_products: this.data.group_products,
+      isPopupVisible: false
+
+    }
+  },
+  methods:{
+    getProduct(id) {
+      this.axios.get(`http://localhost:8876/api/products/${id}`)
+          .then(res => {
+            this.productPopup = res.data.data
+            console.log(res.data.data)
+          })
+          .finally( v => {
+            $(document).trigger('change')
+          })
     }
   }
 }
