@@ -252,26 +252,18 @@
                       <ul class="nav nav-pills" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <button
-                              class="nav-link active"
-                              id="pills-grid-tab"
-                              data-bs-toggle="pill"
-                              data-bs-target="#pills-grid"
+                              :class="`nav-link ${productIsGrid ? 'active' :''}`"
                               type="button"
-                              role="tab"
-                              aria-selected="true"
+                              @click="productIsGrid = true"
                           >
                             <i class="flaticon-grid"></i>
                           </button>
                         </li>
                         <li class="nav-item" role="presentation">
                           <button
-                              class="nav-link"
-                              id="pills-list-tab"
-                              data-bs-toggle="pill"
-                              data-bs-target="#pills-list"
+                              :class="`nav-link ${!productIsGrid ? 'active' :''}`  "
                               type="button"
-                              role="tab"
-                              aria-selected="false"
+                              @click="productIsGrid = false"
                           >
                             <i class="flaticon-list"></i>
                           </button>
@@ -288,33 +280,18 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="tab-content" id="pills-tabContent">
-                  <div
-                      class="tab-pane fade show active"
-                      id="pills-grid"
-                      role="tabpanel"
-                      aria-labelledby="pills-grid-tab"
-                  >
-                    <div class="row">
-                      <div v-for="product in products" :key="product.id" class="col-xl-4 col-lg-6 col-6 ">
+                <div class="tab-content">
+                    <div class="row" v-if="productIsGrid">
+                      <div v-for="product in products" :key="product.id" class="col-xl-4 col-lg-6 col-6">
                         <product-grid :data="product"></product-grid>
                       </div>
                     </div>
-                  </div>
 
-                  <div
-                      class="tab-pane fade"
-                      id="pills-list"
-                      role="tabpanel"
-                      aria-labelledby="pills-list-tab"
-                  >
-                    <div class="row">
+                    <div class="row" v-if="!productIsGrid" >
                       <div v-for="product in products" :key="product.id" class="col-12">
-<!--                        <product :data="product"></product>-->
+                        <product :data="product"></product>
                       </div>
                     </div>
-                  </div>
-
                 </div>
               </div>
             </div>
@@ -358,12 +335,12 @@ export default {
   name: "Index",
   components: {ProductGrid, Product},
   mounted() {
-    // $(document).trigger('change')
     this.getProducts()
   },
   data() {
     return {
       products: [],
+      productIsGrid: true
     }
   },
   methods: {
@@ -371,13 +348,11 @@ export default {
       this.axios.get('http://localhost:8876/api/products')
           .then(res => {
             this.products = res.data.data
-            console.log(res.data.data)
           })
-          .finally( v => {
+          .finally(v => {
             $(document).trigger('change')
           })
-    },
-
+    }
   }
 }
 </script>
