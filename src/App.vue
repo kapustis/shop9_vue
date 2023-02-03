@@ -355,12 +355,14 @@
                   <h4> Newsletter </h4>
                 </div>
                 <div class="footer-newsletter">
-                  <p class="text">Enter your email to receive our latest updates about our products &
-                    promotions. </p>
+                  <p class="text">
+                    Enter your email to receive our latest updates about our products & promotions.
+                  </p>
                   <form action="#0" class="footer-default__subscrib-form">
-                    <div class="footer-input-box"><input type="email" placeholder="Email address"
-                                                         name="email">
-                      <button type="submit" class="subscribe_btn"> Subscribe
+                    <div class="footer-input-box">
+                      <input type="email" placeholder="Email address" name="email">
+                      <button type="submit" class="subscribe_btn">
+                        Subscribe
                       </button>
                     </div>
                   </form>
@@ -370,14 +372,25 @@
                     </div>
                     <div class="footer__medio-boxx  medio-boxx  d-flex align-items-center">
                       <ul>
-                        <li><a href="https://www.facebook.com/" target="_blank" class="active"><i
-                            class="flaticon-facebook-app-symbol"></i></a></li>
-                        <li><a href="https://www.youtube.com/" target="_blank"><i
-                            class="flaticon-youtube"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="flaticon-twitter"
-                                                              target="_blank"></i></a></li>
-                        <li><a href="https://www.instagram.com/"><i class="flaticon-instagram"
-                                                                    target="_blank"></i></a></li>
+                        <li>
+                          <a href="https://www.facebook.com/" target="_blank" class="active">
+                            <i class="flaticon-facebook-app-symbol"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/" target="_blank">
+                          <i lass="flaticon-youtube"></i>
+                          </a>
+                        </li>
+                        <li><a href="https://twitter.com/">
+                          <i class="flaticon-twitter" arget="_blank"></i>
+                        </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/">
+                            <i class="flaticon-instagram" target="_blank"></i>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -410,7 +423,7 @@
 export default {
   name: 'App',
   mounted() {
-    $(document).trigger('change')
+    $(document).trigger('init')
   }
 }
 </script>

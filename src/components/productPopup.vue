@@ -79,9 +79,9 @@
                 <input type="number" class="qtyValue" value="1"/>
                 <span class="increaseQty">
                       <i class="flaticon-plus"></i>
-                    </span>
+                </span>
               </div>
-              <button class="btn--primary ">
+              <button class="btn--primary">
                 Add to Cart
               </button>
             </div>
@@ -121,10 +121,10 @@ export default {
       this.axios.get(`http://localhost:8876/api/products/${id}`)
           .then(res => {
             this.productItem = res.data.data
-            console.log(res.data.data)
+            // console.log(res.data.data)
           })
           .finally(v => {
-            $(document).trigger('change')
+            $(document).trigger('init')
           })
     }
   }

@@ -1,0 +1,80 @@
+<template>
+  <div class="sidebar-holder">
+    <!-- Search?
+    <form action="#0" class="footer-default__subscrib-form m-0 p-0 wow fadeInUp animated">
+      <div class="footer-input-box p-0 ">
+        <input type="email" placeholder="Email address" name="email">
+        <button type="submit" class="subscribe_btn">
+          <i class="flaticon-magnifying-glass"></i>
+        </button>
+      </div>
+    </form>
+    -->
+    <!--Select Categories-->
+    <div class="single-sidebar-box mt-30 wow fadeInUp animated ">
+      <h4>Select Categories</h4>
+      <div class="checkbox-item">
+        <form>
+          <div v-for="category in filters.categories" class="form-group">
+            <input type="checkbox" :id="category.id">
+            <label :for="category.id">{{category.title}}</label>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <!--Select Categories-->
+
+    <!--Color Option-->
+    <div class="single-sidebar-box mt-30 wow fadeInUp animated">
+      <h4>Color Option </h4>
+      <ul class="color-option">
+        <li v-for="color in filters.colors">
+          <a href="#0" class="color-option-single" :style="`background-color:${color.title}`">
+            <span> {{ color.title }}</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <!--Color Option-->
+
+    <!--Filter By Price-->
+    <div class="single-sidebar-box mt-30 wow fadeInUp animated">
+      <h4>Filter By Price</h4>
+      <div class="slider-box">
+        <div id="price-range" class="slider"></div>
+        <div class="output-price">
+          <label for="priceRange">Price:</label>
+          <input type="text" id="priceRange" readonly>
+        </div>
+        <button class="filterbtn" type="submit">
+          Filter
+        </button>
+      </div>
+    </div>
+    <!--Filter By Price-->
+
+    <!--Tags-->
+    <div class="single-sidebar-box mt-30 wow fadeInUp animated pb-0 border-bottom-0 ">
+      <h4>Tags </h4>
+      <ul class="popular-tag">
+        <li v-for="tag in filters.tags">
+          <a href="#0">{{tag.title}}</a>
+        </li>
+      </ul>
+    </div>
+    <!--Tags-->
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Filters",
+  props: ['filters']
+}
+</script>
+
+<style scoped>
+
+</style>

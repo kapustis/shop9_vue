@@ -2,8 +2,8 @@
   <div class="products-three-single w-100  mt-30">
     <div class="products-three-single-img">
       <a href="shop-details-3.html" class="d-block">
-        <img :src="image_url" class="first-img" alt=""/>
-        <img src="src/assets/images/home-three/productss2-hover-1.png" alt="" class="hover-img"/>
+        <img :src="image_url" class="first-img" :alt="title"/>
+        <img src="src/assets/images/home-three/productss2-hover-1.png" :alt="title" class="hover-img"/>
       </a>
 
       <div class="products-grid-one__badge-box">
@@ -59,8 +59,6 @@
 </template>
 
 <script>
-
-
 import ProductPopup from "@/components/productPopup.vue";
 
 export default {
@@ -86,10 +84,10 @@ export default {
       this.axios.get(`http://localhost:8876/api/products/${id}`)
           .then(res => {
             this.productI = res.data.data
-            console.log(res.data.data)
+            // console.log(res.data.data)
           })
           .finally(v => {
-            $(document).trigger('change')
+            $(document).trigger('init')
           })
     }
   }
