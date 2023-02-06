@@ -151,7 +151,6 @@
         </div>
       </div>
 
-
       <div class="sticy-header">
         <div class="mobile-menu d-lg-none d-block">
           <div class="mobile-menu__menu-top border-bottom-0">
@@ -423,7 +422,7 @@
 export default {
   name: 'App',
   mounted() {
-    $(document).trigger('init')
+    $(document).trigger('changed')
   }
 }
 </script>

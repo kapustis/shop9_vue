@@ -121,8 +121,8 @@
                 <i lass="flaticon-cross"> </i>
               </button>
 
-              <template v-if="filters">
-                <filters :filters="filters"></filters>
+              <template v-if="filterItems">
+                <filters></filters>
               </template>
 
             </div>
@@ -240,15 +240,14 @@ export default {
   name: "Index",
   components: {Filters, ProductGrid, Product},
   mounted() {
-    this.getProducts()
-    this.getFilterList()
 
+    this.getProducts()
   },
   data() {
     return {
       products: [],
-      productIsGrid: true,
-      filters:[]
+      productIsGrid: true  ,
+      filterItems: true
     }
   },
   methods: {
@@ -256,19 +255,10 @@ export default {
       this.axios.get('http://localhost:8876/api/products')
           .then(res => {
             this.products = res.data.data
+            console.log(res.data.data);
           })
           .finally(v => {
-            $(document).trigger('init')
-          })
-    },
-    getFilterList(){
-      this.axios.get('http://localhost:8876/api/products/filters')
-          .then(res => {
-            this.filters = res.data
-           console.log(res.data)
-          })
-          .finally(v => {
-            $(document).trigger('init')
+            $(document).trigger('changed')
           })
     }
   }

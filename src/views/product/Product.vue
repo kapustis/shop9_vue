@@ -10,7 +10,8 @@
       </div>
     </div>
     <!--popup-->
-    <div :id="`popup${id}`" class="product-gird__quick-view-popup mfp-hide">
+    <div :id="`popup${id}`" class="product-gird__quick-view-popup mfp-hide"
+    >
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-6">

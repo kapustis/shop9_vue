@@ -124,7 +124,7 @@ export default {
             // console.log(res.data.data)
           })
           .finally(v => {
-            $(document).trigger('init')
+            $(document).trigger('changed')
           })
     }
   }

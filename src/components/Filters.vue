@@ -71,7 +71,46 @@
 <script>
 export default {
   name: "Filters",
-  props: ['filters']
+
+  mounted() {
+    // this.setPriceFilter()
+    this.getFilterList()
+  },
+  data() {
+    return{
+      filters:[]
+    }
+  },
+  methods:{
+    setPriceFilter(){
+          //  Price Filter
+          if ($("#price-range").length) {
+            $("#price-range").slider({
+              range: true,
+              min: this.filters.price.min,
+              max: this.filters.price.max,
+              values: [this.filters.price.min, this.filters.price.max],
+              slide: function (event, ui) {
+                $("#priceRange").val("$" + ui.values[0] + " - $" + ui.values[1]);
+              }
+            });
+            $("#priceRange").val("$" + $("#price-range").slider("values", 0) + " - $" + $("#price-range").slider("values", 1));
+          }
+      $(document).trigger('changed')
+    }
+    ,
+    getFilterList(){
+      this.axios.get('http://localhost:8876/api/products/filters')
+          .then(res => {
+            this.filters = res.data;
+            console.log(res.data);
+            this.setPriceFilter()
+          })
+          .finally(v => {
+            $(document).trigger('changed')
+          })
+    }
+  }
 }
 </script>
 
