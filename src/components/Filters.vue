@@ -16,7 +16,12 @@
       <div class="checkbox-item">
         <form>
           <div v-for="category in filters.categories" class="form-group">
-            <input type="checkbox" :id="category.id">
+            <input
+                type="checkbox"
+                :id="category.id"
+                :value="category.id"
+                v-model="categories"
+            >
             <label :for="category.id">{{category.title}}</label>
           </div>
 
@@ -30,7 +35,12 @@
       <h4>Color Option </h4>
       <ul class="color-option">
         <li v-for="color in filters.colors">
-          <a href="#0" class="color-option-single" :style="`background-color:${color.title}`">
+          <a
+              @click.prevent="addColor(color.id)"
+              href="#0"
+              class="color-option-single"
+              :style="`background-color:${color.title}`"
+          >
             <span> {{ color.title }}</span>
           </a>
         </li>
@@ -48,7 +58,11 @@
           <label for="priceRange">Price:</label>
           <input type="text" id="priceRange" readonly>
         </div>
-        <button class="filterbtn" type="submit">
+        <button
+            @click.prevent="filterProducts()"
+            class="filterbtn"
+            type="submit"
+        >
           Filter
         </button>
       </div>
@@ -60,7 +74,10 @@
       <h4>Tags </h4>
       <ul class="popular-tag">
         <li v-for="tag in filters.tags">
-          <a href="#0">{{tag.title}}</a>
+          <a
+              @click.prevent="addTag(tag.id)"
+              href="#0"
+          >{{tag.title}}</a>
         </li>
       </ul>
     </div>
@@ -71,14 +88,18 @@
 <script>
 export default {
   name: "Filters",
-
+  props:['data','refresData'],
   mounted() {
-    // this.setPriceFilter()
-    this.getFilterList()
+    this.filters = this.data;
+    this.setPriceFilter();
   },
   data() {
     return{
-      filters:[]
+      filters: false,
+      categories:[],
+      colors:[],
+      tags:[],
+      prices:[],
     }
   },
   methods:{
@@ -97,18 +118,39 @@ export default {
             $("#priceRange").val("$" + $("#price-range").slider("values", 0) + " - $" + $("#price-range").slider("values", 1));
           }
       $(document).trigger('changed')
-    }
-    ,
-    getFilterList(){
-      this.axios.get('http://localhost:8876/api/products/filters')
-          .then(res => {
-            this.filters = res.data;
-            console.log(res.data);
-            this.setPriceFilter()
-          })
-          .finally(v => {
-            $(document).trigger('changed')
-          })
+    },
+
+    addColor(id){
+      if(!this.colors.includes(id)){
+        this.colors.push(id)
+      }else{
+        this.colors = this.colors.filter(item => {
+          return item !== id
+        })
+      }
+    },
+    addTag(id){
+      if(!this.tags.includes(id)){
+        this.tags.push(id)
+      }else{
+        this.tags = this.tags.filter(item => {
+          return item !== id
+        })
+      }
+    },
+    filterProducts(){
+      let prices = $('#priceRange').val();
+
+      this.prices = prices.replace(/[\s+|[$]/g,'').split('-');
+
+      this.axios.post('http://localhost:8876/api/products',{
+        'categories' : this.categories,
+        'colors' : this.colors,
+        'tags' : this.tags,
+        'prices' : this.prices,
+      }).then(({data}) =>{
+        this.refresData({data})
+      });
     }
   }
 }
