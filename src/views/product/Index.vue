@@ -118,7 +118,7 @@
           <div class="col-xl-3 col-lg-4">
             <div class="shop-grid-sidebar">
               <button class="remove-sidebar d-lg-none d-block">
-                <i lass="flaticon-cross"> </i>
+                <i class="flaticon-cross"> </i>
               </button>
 
               <template v-if="filterItems">
