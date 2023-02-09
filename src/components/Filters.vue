@@ -88,7 +88,7 @@
 <script>
 export default {
   name: "Filters",
-  props:['data','refresData'],
+  props:['data','dataProducts','setFilters'],
   mounted() {
     this.filters = this.data;
     this.setPriceFilter();
@@ -143,14 +143,17 @@ export default {
 
       this.prices = prices.replace(/[\s+|[$]/g,'').split('-');
 
-      this.axios.post('http://localhost:8876/api/products',{
+
+
+      this.setFilters({
         'categories' : this.categories,
         'colors' : this.colors,
         'tags' : this.tags,
         'prices' : this.prices,
-      }).then(({data}) =>{
-        this.refresData({data})
-      });
+      })
+
+      this.dataProducts()
+
     }
   }
 }

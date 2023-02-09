@@ -122,7 +122,11 @@
               </button>
 
               <template v-if="filterItems">
-                <filters :data="filterItems" :refresData="refresh"/>
+                <filters
+                    :data="filterItems"
+                    :dataProducts="getProducts"
+                    :setFilters="setFilterUsed"
+                />
               </template>
 
             </div>
@@ -201,27 +205,10 @@
             </div>
 
             <!--Pagination-->
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center wow fadeInUp animated">
-                <ul class="pagination text-center">
-                  <li class="next">
-                    <a href="#0">
-                      <i class="flaticon-left-arrows" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li><a href="#0">1</a></li>
-                  <li><a href="#0" class="active">2</a></li>
-                  <li><a href="#0">3</a></li>
-                  <li><a href="#0">...</a></li>
-                  <li><a href="#0">10</a></li>
-                  <li class="next">
-                    <a href="#0">
-                      <i class="flaticon-next-1" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <template v-if="pagination.total > pagination.per_page">
+              <paginator :dataSet="pagination" :dataProducts="getProducts"></paginator>
+            </template>
+
 
           </div>
         </div>
@@ -235,10 +222,11 @@
 import Product from "@/views/product/Product.vue";
 import ProductGrid from "@/views/product/ProductGrid.vue";
 import Filters from "@/components/Filters.vue";
+import Paginator from "@/components/Paginator.vue";
 
 export default {
   name: "Index",
-  components: {Filters, ProductGrid, Product},
+  components: {Paginator, Filters, ProductGrid, Product},
   mounted() {
     this.getProducts()
     this.getFilterList()
@@ -247,7 +235,9 @@ export default {
     return {
       products: [],
       productIsGrid: true,
-      filterItems: false
+      filterItems: false,
+      FilterUsed: {},
+      pagination: []
     }
   },
   methods: {
@@ -260,18 +250,25 @@ export default {
             $(document).trigger('changed')
           })
     },
-    getProducts() {
-      this.axios.post('http://localhost:8876/api/products', {})
+    setFilterUsed(data) {
+      this.FilterUsed = data
+    },
+
+    getProducts(page = 1) {
+
+      this.FilterUsed.page = page
+
+      this.axios.post('http://localhost:8876/api/products', this.FilterUsed)
           .then(res => {
             this.products = res.data.data
+            this.pagination = res.data.meta
+            console.log(res.data)
           })
           .finally(v => {
             $(document).trigger('changed')
           })
     },
-    refresh({data}) {
-      this.products = data.data
-    }
+
 
   }
 }
