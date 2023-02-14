@@ -12,8 +12,10 @@
         </div>
         <div class="col-lg-7 col-md-8 col-sm-10">
           <div class="newsLetter-popup__content mb-4">
-            <div class="text-center"><a href="index.html" class="logo"> <img
-                src="src/assets/images/logo/logo.png" alt="logo"> </a>
+            <div class="text-center">
+              <a href="index.html" class="logo">
+                <img src="/src/assets/images/logo/logo.png" alt="logo">
+              </a>
               <h2> Join <span>with us.</span></h2>
               <p> Subscribe to receive news from Karte In a free hour </p>
             </div>

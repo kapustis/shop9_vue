@@ -47,9 +47,11 @@
 
     <div class="products-three-single-content text-center">
       <span> {{ category.title }}</span>
+
       <h5>
-        <a href="shop-details-3.html"> {{ title }} </a>
+        <router-link :to="{name:'products.show',params:{id: id}}"> {{ title }} </router-link>
       </h5>
+
       <p>
         <del v-if="old_price">${{ old_price }}</del>
         $ {{ price }}
@@ -60,9 +62,15 @@
 
 <script>
 import ProductPopup from "@/components/productPopup.vue";
+import product from "@/views/product/Product.vue";
 
 export default {
   name: "ProductGrid",
+  computed: {
+    product() {
+      return product
+    }
+  },
   components: {ProductPopup},
   props: ['data'],
   data() {

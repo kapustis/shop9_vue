@@ -25,6 +25,7 @@
       -->
     </div>
     <!--End Breadcrumb Style2-->
+
     <!--Start Product Categories One-->
     <!--
     <section class="product-categories-one pb-60">
@@ -111,6 +112,7 @@
     </section>
     -->
     <!--End Product Categories One-->
+
     <!--Start product-grid-->
     <div class="product-grid pt-60 pb-120">
       <div class="container">
@@ -262,7 +264,7 @@ export default {
           .then(res => {
             this.products = res.data.data
             this.pagination = res.data.meta
-            console.log(res.data)
+            // console.log(res.data)
           })
           .finally(v => {
             $(document).trigger('changed')
