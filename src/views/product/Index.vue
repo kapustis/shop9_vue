@@ -264,13 +264,11 @@ export default {
           .then(res => {
             this.products = res.data.data
             this.pagination = res.data.meta
-            // console.log(res.data)
           })
           .finally(v => {
             $(document).trigger('changed')
           })
     },
-
 
   }
 }

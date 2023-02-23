@@ -10,7 +10,7 @@
         <span class="bg_base badge new ">New</span>
       </div>
 
-      <a href="cart.html" class="addcart btn--primary style2">
+      <a @click.prevent="addToCart(id)" href="cart.html" class="addcart btn--primary style2">
         Add To Cart
       </a>
 
@@ -28,8 +28,8 @@
               <span>compare</span>
             </a>
           </li>
-          <li >
-            <a @click.prevent="getProduct(id)" :href="`#popup${id}`" class="popup_link" >
+          <li>
+            <a @click.prevent="getProduct(id)" :href="`#popup${id}`" class="popup_link">
               <i class="flaticon-visibility"></i>
               <span> quick view</span>
             </a>
@@ -49,7 +49,7 @@
       <span> {{ category.title }}</span>
 
       <h5>
-        <router-link :to="{name:'products.show',params:{id: id}}"> {{ title }} </router-link>
+        <router-link :to="{name:'products.show',params:{id: id}}"> {{ title }}</router-link>
       </h5>
 
       <p>
@@ -92,11 +92,41 @@ export default {
       this.axios.get(`http://localhost:8876/api/products/${id}`)
           .then(res => {
             this.productI = res.data.data
-            // console.log(res.data.data)
           })
           .finally(v => {
             $(document).trigger('changed')
           })
+    },
+    addToCart(id) {
+
+      let cart = localStorage.getItem('cart');
+
+      let newProduct = [
+        {
+          'id': id,
+          'quantity': 1
+        }
+      ]
+
+      if (!cart) {
+        localStorage.setItem('cart', JSON.stringify(newProduct))
+      } else {
+        cart = JSON.parse(cart)
+
+        cart.forEach(productInCart => {
+          if (productInCart.id === id) {
+            productInCart.quantity = Number(productInCart.quantity) + 1
+            newProduct = null
+          }
+        });
+
+        Array.prototype.push.apply(cart, newProduct)
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+      }
+
+      $(document).trigger('changed')
     }
   }
 }

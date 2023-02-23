@@ -39,14 +39,14 @@
       <div class="col-lg-6">
         <div class="popup-right-content">
           <h3>{{ productItem.title }}</h3>
-          <div class="ratting">
-            <i class="flaticon-star"></i>
-            <i class="flaticon-star"></i>
-            <i class="flaticon-star"></i>
-            <i class="flaticon-star"></i>
-            <i class="flaticon-star"></i>
-            <span>(112)</span>
-          </div>
+<!--          <div class="ratting">-->
+<!--            <i class="flaticon-star"></i>-->
+<!--            <i class="flaticon-star"></i>-->
+<!--            <i class="flaticon-star"></i>-->
+<!--            <i class="flaticon-star"></i>-->
+<!--            <i class="flaticon-star"></i>-->
+<!--            <span>(112)</span>-->
+<!--          </div>-->
           <p class="text">
             {{ productItem.description }}
           </p>
@@ -81,25 +81,27 @@
                       <i class="flaticon-plus"></i>
                 </span>
               </div>
-              <button class="btn--primary">
+              <button @click.prevent="addToCart(productItem.id)"  class="btn--primary">
                 Add to Cart
               </button>
             </div>
           </div>
-          <div class="payment-method">
-            <a href="#0">
-              <img src="src/assets/images/payment_method/method_1.png" alt="">
-            </a>
-            <a href="#0">
-              <img src="src/assets/images/payment_method/method_2.png" alt="">
-            </a>
-            <a href="#0">
-              <img src="src/assets/images/payment_method/method_3.png" alt="">
-            </a>
-            <a href="#0">
-              <img src="src/assets/images/payment_method/method_4.png" alt="">
-            </a>
-          </div>
+
+<!--          <div class="payment-method">-->
+<!--            <a href="#0">-->
+<!--              <img src="src/assets/images/payment_method/method_1.png" alt="">-->
+<!--            </a>-->
+<!--            <a href="#0">-->
+<!--              <img src="src/assets/images/payment_method/method_2.png" alt="">-->
+<!--            </a>-->
+<!--            <a href="#0">-->
+<!--              <img src="src/assets/images/payment_method/method_3.png" alt="">-->
+<!--            </a>-->
+<!--            <a href="#0">-->
+<!--              <img src="src/assets/images/payment_method/method_4.png" alt="">-->
+<!--            </a>-->
+<!--          </div>-->
+
         </div>
       </div>
     </div>
@@ -126,6 +128,33 @@ export default {
           .finally(v => {
             $(document).trigger('changed')
           })
+    },
+    addToCart(id) {
+
+      let cart = localStorage.getItem('cart');
+      let quantity = Number($('.qtyValue').val())
+
+      let newProduct = [
+        {
+          'id': id,
+          'quantity': quantity
+        }
+      ]
+
+      if (!cart) {
+        localStorage.setItem('cart', JSON.stringify(newProduct))
+      } else {
+        cart = JSON.parse(cart);
+        cart.forEach(productInCart => {
+          if (productInCart.id === id) {
+            productInCart.quantity = Number(productInCart.quantity) + quantity
+            newProduct = null
+          }
+        });
+
+        Array.prototype.push.apply(cart, newProduct);
+        localStorage.setItem('cart', JSON.stringify(cart));
+      }
     }
   }
 }

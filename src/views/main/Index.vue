@@ -20,13 +20,18 @@
               <p> Subscribe to receive news from Karte In a free hour </p>
             </div>
             <form action="#0" class="newsLetter-popup__subscrib-form">
-              <div class="input_box"><input type="email" placeholder="Enter your email Address"
-                                            name="email">
+              <div class="input_box">
+                <input type="email" placeholder="Enter your email Address" name="email">
                 <button type="submit" class="subscribe_btn"> Submit</button>
               </div>
-              <div class="form-group "><input type="checkbox" id="html"> <label for="html"> By providing
-                my information, I agree to Karte <a href="#0"> Privacy Policy</a> and <a href="#0">
-                  Legal Statement</a> </label></div>
+              <div class="form-group ">
+                <input type="checkbox" id="html">
+                <label for="html">
+                  By providing my information, I agree to Karte
+                  <a href="#0"> Privacy Policy</a> and
+                  <a href="#0"> Legal Statement</a>
+                </label>
+              </div>
             </form>
           </div>
         </div>

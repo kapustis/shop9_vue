@@ -202,6 +202,7 @@
                   <i class="flaticon-shipping"></i>
                   <p>SPENT <span>$399.00</span> MORE FOR FREE SHIPPING</p>
                 </div>
+
                 <div class="shop-details-top-social-box">
                   <p>Share:</p>
                   <ul class="ps-1 social_link d-flex align-items-center">
@@ -227,6 +228,7 @@
                     </li>
                   </ul>
                 </div>
+                <!--
                 <div class="checked-box">
                   <form>
                     <div class="form-group">
@@ -235,6 +237,7 @@
                     </div>
                   </form>
                 </div>
+                -->
 
                 <div class="shop-details-top-buy-now-btn">
                   <a href="#" class="btn--primary">Buy It Now</a>
@@ -400,6 +403,7 @@
             </ul>
           </div>
         </div>
+
         <div class="row wow fadeInUp animated">
           <div class="tab-content" id="pills-tabContent-two">
             <div
@@ -410,50 +414,8 @@
             >
               <div class="product-drescription">
                 <h4> Product Details:</h4>
-                <p>
-                  Assertively conceptualize parallel process improvements through user friendly
-                  colighue to action items. Interactively antidos cultivate interdependent customer
-                  service without clicks-and-mortar e-services. Proactively cultivate go forward
-                  testing procedures with accurate quality vectors. Globally aiembrace ethical
-                  functionalities via empowered scenarios. Phosfluorescently restore highly efficient
-                  opportunities and client-focused infomediaries. Enthusiastically transition
-                  multidisciplinary outside the box thinking without premium networks. Progressive
-                  supply clicks-and-mortar human capital through enterprise-wide web services.
-                  Objectivey bester provide access to extensible processes better than more
-                  qulification dumber there stoaling through 24/365 solutions.
-                </p>
-                <div class="row align-items-center">
-                  <div class="col-lg-4 mt-30 ">
-                    <div class="thumb">
-                      <img src="/src/assets/images/shop/shop-details-tab-content-specification-img-1.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-8 mt-30">
-                    <h4>Specification:</h4>
-                    <ul class="drescription-list">
-                      <li>
-                        1. Adipiscing hac cubilia, fermentum ipsum auctor parturient tempus
-                        lobortis fermentum.
-                      </li>
-                      <li>
-                        2. Euismod disagree soler imperdiet vehicula pede eros ipsum cras mi
-                        feugiat.
-                      </li>
-                      <li>
-                        3. Rhoncus consequat phasellus donec suspendisse scelerisque facilisis
-                        gravida porttitor turpis.
-                      </li>
-                      <li>
-                        4. Consequat phasellus donec suspendisse scelerisque facilisis gravida
-                        porttitor turpis.
-                      </li>
-                      <li>
-                        5. Consequat phasellus donec suspendisse scelerisque facilisis gravida
-                        porttitor
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                {{ product.description }}
+
               </div>
             </div>
             <div
@@ -462,7 +424,8 @@
                 aria-labelledby="pills-additional-tab"
             >
               <div class="product-drescription">
-                <p class="pt-0"> Assertively conceptualize parallel process improvements through user
+                <p class="pt-0">
+                  Assertively conceptualize parallel process improvements through user
                   friendly colighue to action items. Interactively antidos cultivate interdependent
                   customer service without clicks-and-mortar e-services. Proactively cultivate go
                   forward testing procedures with accurate quality vectors. Globally aiembrace ethical
@@ -471,7 +434,8 @@
                   multidisciplinary outside the box thinking without premium networks. Progressive
                   supply clicks-and-mortar human capital through enterprise-wide web services.
                   Objectivey bester provide access to extensible processes better than more
-                  qulification dumber there stoaling through 24/365 solutions. </p>
+                  qulification dumber there stoaling through 24/365 solutions.
+                </p>
                 <ul class="drescription-list">
                   <li>
                     1. Adipiscing hac cubilia, fermentum ipsum auctor parturient tempus lobortis
@@ -675,6 +639,7 @@
                 </div>
                 <div class="review-from-box mt-30">
                   <h6>Write a Review</h6>
+
                   <form action="#" class="review-from">
                     <div class="row">
                       <div class="col-lg-12">
@@ -689,6 +654,7 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label for="name">NAME</label>

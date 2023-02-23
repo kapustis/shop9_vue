@@ -134,7 +134,7 @@
                             <li class="cartm">
                               <a href="#0" class="number cart-icon">
                                 <i class="flaticon-shopping-cart"></i>
-                                <span class="count">(5)</span>
+                                <span class="count">{{ getCountCart }}</span>
                               </a>
                             </li>
                           </ul>
@@ -145,7 +145,8 @@
                   </div>
                 </div>
               </div>
-              <a href="shop-grid.html" class="offer-link"> Offer </a>
+
+              <!--              <a href="shop-grid.html" class="offer-link"> Offer </a>-->
             </div>
           </div>
         </div>
@@ -204,6 +205,8 @@
         </div>
       </div>
 
+      <cart-in-header></cart-in-header>
+
       <div class="sidebar-content-closer"></div>
       <div class="sidebar-content">
         <div class="sidebar-widget-container">
@@ -214,7 +217,9 @@
             <div class="sidebar-info-contents">
               <div class="content-inner">
                 <div class="logo">
-                  <a href="index.html"><img src="http://localhost:5173/src/assets/images/logo/logo-2.png" alt=""></a>
+                  <a href="index.html">
+                    <img src="http://localhost:5173/src/assets/images/logo/logo-2.png" alt="">
+                  </a>
                 </div>
                 <div class="content-box">
                   <h4>About Us</h4>
@@ -269,13 +274,13 @@
                     </li>
                     <li class="twitter">
                       <a href="https://twitter.com/" target="_blank">
-                      <i class="flaticon-twitter"></i>
+                        <i class="flaticon-twitter"></i>
                       </a>
                     </li>
                     <li class="instagram">
                       <a href="https://www.instagram.com/" target="_blank">
-                      <i class="flaticon-instagram"></i>
-                    </a>
+                        <i class="flaticon-instagram"></i>
+                      </a>
                     </li>
                     <li class="youtube">
                       <a href="https://www.youtube.com/" target="_blank">
@@ -296,8 +301,9 @@
 
     <!--  Footer Three start -->
     <footer class="footer-default footer-3 ">
-      <div class="footer-default__shap_1 position-absolute "><img src="http://localhost:5173/src/assets/images/shape/footer-shape-1.png"
-                                                                  alt=""></div>
+      <div class="footer-default__shap_1 position-absolute ">
+        <img src="http://localhost:5173/src/assets/images/shape/footer-shape-1.png" alt="">
+      </div>
       <!--Start Footer-->
       <div class="footer-default__main-footer position-relative">
         <div class="container">
@@ -378,7 +384,7 @@
                         </li>
                         <li>
                           <a href="https://www.youtube.com/" target="_blank">
-                          <i lass="flaticon-youtube"></i>
+                            <i lass="flaticon-youtube"></i>
                           </a>
                         </li>
                         <li><a href="https://twitter.com/">
@@ -406,10 +412,14 @@
               <p>© 2022 <a href="index.html">Karte.</a> All Rights Reserved.</p>
             </div>
             <div class="footer-payment wow fadeInUp animated">
-              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-1.jpg" alt="payment"> </a>
-              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-2.jpg" alt="payment"> </a>
-              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-3.jpg" alt="payment"> </a>
-              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-4.jpg" alt="payment"> </a>
+              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-1.jpg" alt="payment">
+              </a>
+              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-2.jpg" alt="payment">
+              </a>
+              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-3.jpg" alt="payment">
+              </a>
+              <a href="#0"> <img src="http://localhost:5173/src/assets/images/home-four/method-4.jpg" alt="payment">
+              </a>
             </div>
           </div>
         </div>
@@ -419,11 +429,28 @@
 </template>
 
 <script>
+import CartInHeader from "@/components/CartInHeader.vue";
+
 export default {
   name: 'App',
+  components: {CartInHeader},
   mounted() {
     $(document).trigger('changed')
-  }
+  },
+  computed: {
+
+    getCountCart() {
+      let cart = localStorage.getItem('cart');
+      if (cart) {
+        let totalQuantity = JSON.parse(cart).reduce((acc, item) => acc + parseInt(item.quantity), 0);
+        return totalQuantity
+      }
+      return null
+
+    }
+  },
+
+
 }
 </script>
 
