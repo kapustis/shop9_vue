@@ -104,7 +104,7 @@ export default {
       let newProduct = [
         {
           'id': id,
-          'quantity': 1
+          'quantity': 1,
         }
       ]
 
