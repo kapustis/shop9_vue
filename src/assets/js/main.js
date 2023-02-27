@@ -2,21 +2,6 @@ jQuery(function ($) {
     'use strict';
 
     $(document).on('changed', function () {
-        /****======  Sticky Header ======*******/
-        let scrollPosition = window.scrollY;
-        if (scrollPosition >= 400) {
-            $(".sticy-header").addClass("animated fadeInDown fixed");
-        }
-        let header = $(".sticy-header");
-
-        $(window).on("scroll", function () {
-            if ($(this).scrollTop() < 400) {
-                header.removeClass("animated fadeInDown fixed");
-            } else {
-                header.addClass("animated fadeInDown fixed");
-            }
-        });
-
 
         /****======  newsLetter_popup ======*******/
         let selector = $(".modal-btn");
@@ -29,6 +14,7 @@ jQuery(function ($) {
         selector.click();
 
         /****======  Active class add Remove  ======*******/
+
         $(".menubar").on("click", function () {
             $(".mobile-menu__sidebar-menu ").addClass("active");
             $(".menu-closer").addClass("active");

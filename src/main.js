@@ -4,7 +4,7 @@ import router from './router'
 import axios from "axios";
 
 // import './assets/main.css'
-
+import './assets/js/mainNoJQ'
 
 const app = createApp(App)
 
