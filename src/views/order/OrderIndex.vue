@@ -28,20 +28,25 @@
                         <img :src="`http://localhost:8876/storage/${product.preview_image}`" :alt="product.title">
                       </router-link>
                       <router-link :to="{name:'products.show',params:{id: product.id}}" class="title">
-                        <h5> {{ product.title }}</h5>
+                        <h5> {{ product.title }} </h5>
                       </router-link>
                     </div>
                   </td>
                   <td>${{ product.price }}</td>
                   <td class="qty">
                     <div class="qtySelector text-center">
-                      <span class="decreaseQty">
+                      <button :disabled="product.quantity === 1" @click="updatingQuantity(product.id,-1)">
+                         <span class="decreaseQty">
                         <i class="flaticon-minus"></i>
                       </span>
+                      </button>
                       <input type="number" class="qtyValue" :value="product.quantity"/>
-                      <span class="increaseQty" @click="addQuantity(product.id)">
-                        <i class="flaticon-plus"></i>
-                      </span>
+                      <button :disabled="product.count === product.quantity" @click="updatingQuantity(product.id,1)">
+                        <span class="increaseQty">
+                          <i class="flaticon-plus"></i>
+                        </span>
+                      </button>
+
                     </div>
                   </td>
                   <td class="sub-total">${{ product.subtotal }}</td>
@@ -129,6 +134,7 @@ export default {
           return {
             id: item.id,
             quantity: item.quantity,
+            count: product.count,
             price: product.price,
             title: product.title,
             preview_image: product.preview_image,
@@ -146,28 +152,28 @@ export default {
         $(document).trigger('changed');
       }
     },
-    setTotal(){
-      if(this.products){
+    setTotal() {
+      if (this.products) {
         this.total = this.products.reduce((total, item) => {
           return total + item.quantity * item.price;
         }, 0);
       }
     },
-    addQuantity(id) {
+    updatingQuantity(id, plusOrMinus) {
       const cart = JSON.parse(localStorage.getItem('cart'));
 
       // Находим товар в корзине по id
       const productCart = cart.find(item => item.id === id);
 
       // Увеличиваем количество товара на 1
-      productCart.quantity += 1;
+      productCart.quantity += plusOrMinus;
 
       // Обновляем корзину в localStorage
       localStorage.setItem('cart', JSON.stringify(cart));
 
       const product = this.products.find(p => p.id === id);
-      product.quantity++;
-      product.subtotal = product.quantity* product.price;
+      product.quantity += plusOrMinus;
+      product.subtotal = product.quantity * product.price;
 
       this.products = [
         ...this.products.slice(0, this.products.indexOf(product)),
@@ -236,5 +242,11 @@ export default {
 </script>
 
 <style scoped>
+
+button:disabled span{
+  color: #a6a5a5;
+  cursor: default;
+  background:#FFFFFF;
+}
 
 </style>
